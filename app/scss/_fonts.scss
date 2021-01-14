@@ -1,21 +1,67 @@
 @font-face {
-    font-family: 'Quicksand-Regular';
-    font-weight: 400;
+    font-family: 'Montserrat';
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src: local('Quicksand-Regular'),
-         url('../fonts/Quicksand-Regular.woff2') format('woff2'),
-         url('../fonts/Quicksand-Regular.woff') format('woff');
+    src: local('Montserrat'),
+         url('../fonts/Montserrat-Light.woff2') format('woff2'),
+         url('../fonts/Montserrat-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Quicksand-Medium';
+    font-family: 'Montserrat';
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: local('Quicksand-Medium'),   
-         url('../fonts/Quicksand-Medium.woff2') format('woff2'),
-         url('../fonts/Quicksand-Medium.woff') format('woff');
+    src: local('Montserrat'),
+         url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+         url('../fonts/Montserrat-Medium.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: local('Montserrat'),
+         url('../fonts/Montserrat.woff2') format('woff2'),
+         url('../fonts/Montserrat.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('Montserrat'),
+         url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Alice';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Alice'),
+         url('../fonts/Alice-Regular.woff2') format('woff2'),
+         url('../fonts/Alice-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('Playfair Display'),
+         url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+         url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+}
+
+
+
+
+
+
 
 
