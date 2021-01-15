@@ -4,6 +4,79 @@
 @import 'libs';
 @import 'global';
 
+.header{
+   &__inner{
+      display: flex;
+      align-items: center; 
+   }   
+}
+
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 150px;
+   background-color:  #2F3138;
+}
+
+.menu{
+   &__list{
+      display: flex;
+      margin-left: 110px;
+   }
+   &__item + .menu__item {
+      margin-left: 57px;
+   }
+   &__link{
+      display: inline-block;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #40434C;
+   }
+}
+
+.lang-switch{
+   display: flex;
+   min-width: 110px;
+   margin-left: auto;
+   &__item{
+      position: relative;
+      padding-right: 36px;
+      &:last-child{
+         padding-right: 0;
+      }    
+      &::after{
+         content: '';
+         position: absolute;
+         width: 3px;
+         height: 3px;
+         right: 18px;
+         top: 50%;
+         transform: translateY(-50%);
+         background: #40434C;
+      }
+      &:last-child{
+         &::after{
+            display: none;
+         }         
+      }
+   }
+   &__link{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgba(64, 67, 76, 0.5);      
+       
+   }
+   &__link--active{
+      color: #40434C;
+   }
+}
+
 // .header{
 //    padding: 40px 0;
 //    &__inner{
