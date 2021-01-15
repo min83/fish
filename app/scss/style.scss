@@ -18,12 +18,13 @@
    width: 150px;
    height: 150px;
    background-color:  #2F3138;
+   margin-left: -15px;
 }
 
 .menu{
    &__list{
       display: flex;
-      margin-left: 110px;
+      margin-left: 140px;
    }
    &__item + .menu__item {
       margin-left: 57px;
@@ -42,6 +43,7 @@
    display: flex;
    min-width: 110px;
    margin-left: auto;
+   margin-right: 130px;
    &__item{
       position: relative;
       padding-right: 36px;
@@ -69,13 +71,43 @@
       font-size: 16px;
       line-height: 20px;
       text-transform: uppercase;
-      color: rgba(64, 67, 76, 0.5);      
-       
+      color: rgba(64, 67, 76, 0.5); 
    }
    &__link--active{
       color: #40434C;
    }
 }
+
+.club{
+   padding: 178px 0 263px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   &__content{
+      max-width: 510px;
+   }
+   &__title{
+      color: #fff;
+      margin-bottom: 40px;
+      &::after{
+         background-image: url(../images/title-decor-white.svg);
+      }
+   }
+   &__text{
+      max-width: 460px;
+      margin-bottom: 40px;
+      @extend %montserrat-300;
+      font-size: 24px;
+      color: #fff;
+   }
+
+   &__link{
+      display: inline-block;
+      @extend %btn;
+   }
+}
+
+
 
 // .header{
 //    padding: 40px 0;

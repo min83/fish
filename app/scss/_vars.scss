@@ -1,6 +1,6 @@
 $default: #1F1F1F;
 // $accent: #fe3e57;
-// $title: #29282d;
+$title: #151515;
 // $bg:#f6f6f6;s
 
 %montserrat-300{
@@ -33,16 +33,17 @@ $default: #1F1F1F;
    font-weight: 400;
 }
 
-// %btn{
-//    padding:12px 26px;
-//    background-color: $accent;
-//    text-transform: uppercase;
-//    color: #fff;
-//    letter-spacing: 0.2em;
-//    @extend %roboto-400;
-//    box-shadow: 0px 10px 25px 0px rgba(253,61,87,0.3);
-//    cursor: pointer;
-// }
+%btn{
+   @extend %alice-400;
+   padding: 20px 44px;
+   font-size: 24px;
+   line-height: 27px;
+   // text-align: center;
+   letter-spacing: 0.0357143em;
+   color: #fff;
+   border: 1px solid #FFFFFF;
+   cursor: pointer;
+}
 
 // %checkbox-hidden,
 // %radio-hidden{

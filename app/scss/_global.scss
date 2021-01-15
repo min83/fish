@@ -16,10 +16,33 @@ body {
    flex-direction: column;
 }
 
-.container {
+.container,
+.top-container{
    max-width: 1430px;
    margin: 0 auto;
    padding: 0 15px;
+}
+
+.top-container{
+   max-width: 1950px;
+}
+
+.title{
+   @extend %playfair-700;
+   font-size: 70px;
+   line-height: 84px;
+   color: $title;
+   padding-bottom: 55px;
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 8.5px;
+      background-image: url(../images/title-decor.svg);
+      bottom: 0;  
+      left: 0;
+   }   
 }
 
 // a {
