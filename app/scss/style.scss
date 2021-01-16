@@ -107,6 +107,52 @@
    }
 }
 
+.about{
+   padding: 110px 0 120px;
+   border-bottom:1px solid #E3E3E3;
+   &__content{
+      max-width: 756px;
+      margin-bottom: 100px;
+   }
+   &__title{
+      margin-bottom: 40px;
+   }
+   &__text{
+      font-size: 24px;
+   }
+   &__team{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      column-gap: 40px;
+   }
+   &__team-item{
+      max-width: 440px;
+      box-shadow: 0px 13px 27px rgba(0, 0, 0, 0.05);
+      &:hover {
+         .about__team-img{
+            transition: all .3s;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+         }
+      }
+   }
+   &__team-name{
+      @extend %alice-400;
+      font-size: 25px;
+      line-height: 29px;
+      color: #222222;
+   }
+   &__team-link{
+      display: block;
+      padding: 35px 10px;
+      color: inherit;
+      font: inherit;
+   }
+
+
+}
+
 
 
 // .header{
