@@ -17,6 +17,15 @@
          url('../fonts/Montserrat-Medium.woff2') format('woff2'),
          url('../fonts/Montserrat-Medium.woff') format('woff');
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: local('Montserrat'),
+         url('../fonts/Montserrat-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Montserrat-MediumItalic.woff') format('woff');
+}
 
 @font-face {
     font-family: 'Montserrat';

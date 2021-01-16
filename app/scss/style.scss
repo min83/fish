@@ -149,8 +149,58 @@
       color: inherit;
       font: inherit;
    }
+}
 
+.deepsea{
+   padding: 100px 0;
+   border-bottom:1px solid #E3E3E3;
+   &__content{
+      display: flex;
+      justify-content: space-between; 
+   }
 
+   &__text-box{
+      max-width: 630px;
+      padding-right: 30px;
+   }
+   &__title{
+      margin-bottom: 40px;
+   }
+   &__text{
+      margin-bottom: 40px;
+   }
+   &__image{
+      align-self: start;    
+   }   
+}
+
+.emirates{
+   padding: 110px 0 226px;
+   background-color: #EFF6F9;
+   border-bottom:1px solid #E3E3E3;
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+   }
+   &__title{
+      max-width: 640px;
+      font-size: 40px;
+      line-height: 56px;
+      margin-bottom: 40px;
+   }
+   &__image{
+      margin-bottom: 30px;
+   }
+   &__text {
+      max-width: 640px;
+      margin-bottom: 50px;
+      &:last-child{
+         font-style: italic;
+         margin-bottom: 0;
+         color: #225189;
+      }
+   }
 }
 
 
