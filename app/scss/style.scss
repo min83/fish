@@ -203,6 +203,110 @@
    }
 }
 
+.fishing{
+   padding: 106px 0 85px;
+   &__top-inner{
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+      margin-bottom: 100px;
+   }
+   &__text-box{
+      width: 600px;      
+   }
+   &__title{
+      margin-bottom: 40px;
+   }
+   &__bottom-inner{
+      display: flex;
+   }
+   &__tabs{
+      width: 320px;
+      margin-right: 130px;
+   }
+   &__item{
+      @extend %playfair-700;
+      font-size: 25px;
+      line-height: 35px;
+      color:$title;
+      margin-bottom: 25px;
+   }
+   &__link{
+      display: block;
+      color: inherit;
+      font: inherit;
+   }
+   &__link--active{
+      display: block;
+      position: relative;
+      color: #225189;
+      padding-right: 70px;
+      &::after{         
+         content: '';
+         position: absolute;
+         background-image: url('../images/fish.svg');
+         top:-2px;
+         right: 0;
+         width: 53px;
+         height: 45px;
+      }
+   }
+   &__btn{
+      display: inline-block;
+      @extend %btn;
+      color: #225189;
+      border-color: #225189;
+      margin-top: 50px;
+   }
+   &__tab-content{
+      max-width: 960px;
+   }
+   &__content-item{
+      display: none;
+      &.fishing__content-item--active{
+         display: block;
+      }
+   }
+   &__text{
+      margin-bottom: 40px;
+   }
+   &__slider{
+      padding-bottom: 50px;
+   }
+   &__slide-img{
+      max-width: 200px;
+      height: 140px;
+      object-fit: cover;
+   }
+   .slick-prev,
+   .slick-next{
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      width: 201px;
+      height: 16px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .slick-prev{
+      left:0;
+   }
+   .slick-next{
+      right: 40px;
+   }
+   
+   .slick-disabled{
+      path{
+         fill: rgba(#225189, .5);
+      } 
+   }
+}
+
 
 
 // .header{
