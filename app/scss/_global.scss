@@ -51,13 +51,16 @@ body {
 }
 
 .breadcrumbs{
-   max-width: 500px;
+   max-width: 750px;
    min-height: 50px;
-   // transform: rotate(-90deg);
-    
+   position: relative;
+   transform: rotate(-90deg);
+   top: 340px;
+   left:-38%;
+
+   
    &__list{
-      display: flex;     
-     
+      display: flex;      
    }
    &__item{
       color: #fff;
