@@ -25,6 +25,7 @@ body {
 
 .top-container{
    max-width: 1950px;
+   position: relative;
 }
 
 .title{
@@ -35,11 +36,11 @@ body {
    padding-bottom: 55px;
    position: relative;
    &::after{
-      content: '';
+      content: "";
       position: absolute;
       width: 90px;
       height: 9px;
-      background-image: url(../images/title-decor.svg);
+      background-image: url('../images/title-decor.svg');
       bottom: 0;  
       left: 0;
    }    
@@ -47,4 +48,68 @@ body {
 
 .bottom-line{
    border-bottom:1px solid #E3E3E3;
+}
+
+.breadcrumbs{
+   max-width: 500px;
+   min-height: 50px;
+   // transform: rotate(-90deg);
+    
+   &__list{
+      display: flex;     
+     
+   }
+   &__item{
+      color: #fff;
+      font-size: 18px;
+      padding-right: 50px;
+      position: relative;
+      &::after{
+         content: "";
+         position: absolute;
+         width: 3px;
+         height: 3px;
+         right: 26px;
+         top: 50%;
+         transform: translateY(-50%);
+         background: #fff;         
+      }
+      &:last-child{
+         color: rgba(#fff, .4);
+         padding-right: 0;
+         &::after{
+            display: none;
+         }
+      }      
+   }
+   &__link{
+      display: inline-block;
+      color: inherit;
+      font: inherit;
+   }
+}
+
+.pagination{
+   display: flex;
+   align-items: center;
+   &__prev,
+   &__next{
+      display: inline-block;
+   }
+   &__list{
+      display: flex;
+      padding: 0 124px;
+   }
+   &__item{
+      padding: 0 13px;
+   }
+   &__link{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 30px;
+      color: inherit;
+   }
+   &__link--active{
+      color: rgba($default, .5);
+   }
 }
