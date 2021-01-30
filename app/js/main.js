@@ -1,5 +1,23 @@
 $(function() {
 
+   $(".menu a").on("click", function (e) {
+      e.preventDefault();
+      var id = $(this).attr('href'),
+         top = $(id).offset().top;
+      $('body,html').animate({ scrollTop: top }, 1500);
+   });
+
+   if (screen.width <= 992) {
+      $('.news__content').slick({
+         arrows: false,
+         dots: true,
+         autoplay: true,
+         autoplaySpeed: 3000,
+         slidesToScroll: 1,
+      });
+   };
+      
+
    $('.menu__btn').on('click', function () {
       $('.menu__list').toggleClass('menu__list--active');
    });
@@ -51,7 +69,10 @@ $(function() {
       ]
    });
 
-   
+   $('.blog__aside-title').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('active');
+   });
 
    
    // $('.shop-content__filter-btn').on('click', function() {

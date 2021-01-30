@@ -43,6 +43,45 @@
          margin-top: 30px;        
       }
    }
+   .news{
+      &__content{
+         top:100px;
+         display: block;
+         column-gap: 0;
+      }
+      &__image{
+         height: 100%;
+      }
+      &__content-item{
+         width: 100%;
+         display: flex;
+         margin-bottom: 30px;
+      }
+      &__item-box{
+         width: 100%;    
+         min-height: 1px;
+      }
+      &__description{
+         margin-bottom: 10px;
+      }
+   }      
+   .blog{
+      &__title{
+         padding-right: 330px;
+         &::after{
+            width: 320px;
+         }
+      }
+      &__content{
+         margin-right: 70px;
+      }
+      &__item-box{
+         padding: 40px 50px;
+      }
+      &__aside{
+         max-width: 330px;
+      }
+   }
 }
 
 @media (max-width: 1200px){
@@ -76,14 +115,14 @@
       }
       &__item{
          width: 100%;
-         padding: 0 15px;
+         padding: 0 10px;
          text-align: center;         
       }
       &__item + .menu__item {
          margin-left: 0;
       }      
       &__link{
-         padding: 15px 0;
+         padding: 20px 0;
          display: block;
          border-bottom: 1px solid#E3E3E3;
       }
@@ -116,7 +155,7 @@
          max-width: 100%;
       }
       &__image{
-         width: 70%;
+         width: 80%;
          margin: 0 auto 40px        
       }
       &__text{
@@ -134,7 +173,7 @@
          width: 100%;
       }
       &__top-img{
-         width: 70%;
+         width: 80%;
          margin: 0 auto;
       }
       &__top-text{
@@ -188,6 +227,56 @@
          margin-left: 0;
          margin-right: auto;      
       }    
+   } 
+   .news{
+      &__item-box{
+         padding: 30px;
+      }
+   }  
+   .blog{
+      padding: 150px 0 120px;
+      &__inner{
+         flex-direction: column-reverse;
+      }
+      &__content{
+         max-width: 100%;
+         margin-right: 0;
+      }
+      &__image{
+         max-width: 400px;
+         height: 400px;
+      }
+      &__item-box{
+         max-width: 100%;
+      }
+      &__aside{
+         max-width: 100%;
+      }
+      &__aside-title{
+         display: inline-block;         
+         pointer-events: auto;
+         position: relative;
+         padding-right: 30px;
+         &::before{
+            content: "";
+            position: absolute;
+            background-image: url('../images/select.svg');
+            width: 20px;
+            height: 8px;
+            right: 0;
+            top:60%;
+            transform: translateY(-50%);
+         }
+         &.active{
+            &::before{               
+               transform: rotate(180deg);
+               top:30px;
+            }            
+         }
+      }
+      &__aside-list{
+         display: none;
+      }      
    }
 }
 
@@ -200,7 +289,11 @@
 }
 
 @media (max-width: 992px){
+   .club{
+      padding: 70px 0;    
+   }
   .about{
+     padding: 70px 0;   
      &__content{
         margin-bottom: 50px;
      }
@@ -216,10 +309,23 @@
       &__team-img{
          width: 100%;
       }
+   }
+   .deepsea{
+      padding: 70px 0;
+   }
+   .emirates{
+      padding: 70px 0;
+      &__image{
+         width: 100%;
+      }
    } 
    .fishing{
+      padding: 70px 0;
       &__bottom-inner{
          display: block;
+      }
+       &__top-img{
+         width: 100%;
       }
       &__tabs{
          width: 400px;
@@ -244,57 +350,118 @@
       }
    }
    .price{
+      padding: 70px 0;
       &__item{
          max-width: 170px;
       }
    }
    .boats{
+      padding: 70px 0;
       &__img{
          max-width: 90%;
+      }
+   }
+   .footer{
+      padding: 70px 0;
+   }
+  .news{
+     padding: 70px 0;
+     &__content{
+        top:50px;
+     }
+      &__content-item{
+         width: 100%;
+         display: block;
+         min-height: 470px;         
+      }
+      &__image {
+         max-width: 100%;
+         width: 100%;        
+         height: 240px;
+      
+      }
+      &__item-box{
+         display: block;
+         width: 100%;
+         padding: 30px;
+      }
+      .slick-dots{
+         display: flex;
+         justify-content: center;      
+         li{
+            padding: 0 10px;
+            button{
+               padding: 0;
+               border: 1px solid #225189;
+               width: 20px;
+               height: 20px;
+               border-radius: 50%;
+               background-color:  #ffff;
+               font-size: 0;
+               outline: none;     
+            }
+         }
+      }
+      li.slick-active{
+         button{
+            border:1px solid #fff;
+            background-color:#225189;
+         }
+      }
+   }
+   .blog{
+      padding: 70px 0;
+      &__title{
+         padding-right: 0;
+         &::after{
+            display: none;
+         }
+      }
+      &__aside-title{
+         padding-right: 30px;
+      }
+      &__item-box{
+         padding: 30px 40px;
       }
    }
 }
 
 @media (max-width: 768px){
-   .club{
-      padding: 70px 0;    
+   .logo{
+      padding: 10px;
+   }
+   .menu{
+      &__list{
+         top: 100px;
+         padding-top: 30px;
+      }
    }
    .about{
-      padding: 70px 0;
       &__team-item{
          width: 100%;
       }            
    }
    .deepsea{
-      padding: 70px 0;
       &__text{
          margin-bottom: 25px;
       }
    }
    .emirates{
-      padding: 70px 0;
       &__title{
          font-size: 36px;
          line-height: 54px;
-      }
-      &__image{
-         width: 100%;
       }
       &__text{
          margin-bottom: 25px;
       }
    }
    .fishing{
-      padding: 70px 0;
       &__top-inner{
          margin-bottom: 40px;
       }
       &__item{
          font-size: 20px;
          margin-bottom: 15px;
-      }
-      &__top-img{
-         width: 100%;
       }
       &__text{
          margin-bottom: 25px;
@@ -333,7 +500,6 @@
       }
    }
    .price{
-      padding: 70px 0;
       &__items{
          display: block;
          &::after{
@@ -357,8 +523,7 @@
          }
       }
    }
-   .boats{
-      padding: 70px 0;
+   .boats{    
       &__text{
          margin-bottom: 25px;
       }
@@ -367,7 +532,6 @@
       }
    } 
    .footer{
-      padding: 70px 0;
       &__item--address{
          width: 100%;
          order:0;
@@ -388,7 +552,47 @@
       &__item--contacts{
         max-width: 100%; 
       }    
-   }   
+   }
+
+   .blog{
+      &__filter-select{
+         padding-top: 0;
+         margin-bottom: 30px;
+      }
+      &__title{
+         margin-bottom: 30px;
+         font-size: 40px;
+         line-height: 50px;
+      }
+       &__aside-title.active{
+         &::before{
+            top:25px;
+         }
+      }
+      &__item{
+         display: block;
+         width: 100%;
+         margin-bottom: 30px;
+         &:last-child{
+            margin-bottom: 35px;
+         }
+      }
+      &__image{
+         max-width: 100%;
+         width: 100%;
+         height: 240px;
+      }
+      &__item-box{
+         padding: 25px;
+      }
+      &__subtitle{
+         font-size: 28px;
+         line-height: 32px;
+      }
+      &__text{
+         margin-bottom: 30px;
+      }
+   } 
 }
 
 @media (max-width: 500px){
@@ -454,6 +658,59 @@
    }
    .footer{
       padding: 50px 0;
+   }
+   .news{
+      padding: 50px 0;
+      min-height: 1px;
+      &__content{
+         top:0;
+      }
+      &__image{
+         height: 200px;
+      }
+      &__item-box{
+         padding: 20px;
+      }
+      &__subtitle{
+         font-size: 30px;
+         line-height: 36px;
+      }
+   }
+   .blog{
+      padding: 50px 0;
+      &__title{
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 42px;
+      }
+      &__aside-title.active{
+         &::before{
+            top:20px;
+         }
+      }
+      &__aside-item{
+         font-size: 16px;
+         line-height: 24px;
+         margin-bottom: 15px;
+      }
+      &__image{
+         height: 180px;
+      }
+       &__subtitle{
+         font-size: 24px;
+         line-height: 28px;
+         margin-bottom: 20px;
+      }
+      &__text{
+         font-size: 16px;
+         line-height: 24px;
+         margin-bottom: 20px;
+      }
+      &__link{
+         &::after{
+            top:-5px;
+         }
+      }
    }
 }
 

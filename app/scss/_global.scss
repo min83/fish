@@ -33,7 +33,6 @@ body {
    max-width: 1950px;
    position: relative;
 }
-
 .title{
    @extend %playfair-700;
    font-size: 70px;
@@ -51,7 +50,7 @@ body {
       left: 0;
    }    
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
    .title{
       font-size: 55px;
       line-height: 62px;
@@ -109,10 +108,19 @@ body {
       font: inherit;
    }
 }
+@media (max-width: 1800px){
+   .breadcrumbs{
+      max-width: 100%;
+      transform: rotate(0);
+      top:0;
+      left:0;
+   }
+}
 
 .pagination{
    display: flex;
    align-items: center;
+   justify-content: center;
    &__prev,
    &__next{
       display: inline-block;
@@ -133,5 +141,22 @@ body {
    &__link--active{
       color: rgba($default, .5);
    }
+}    
+@media (max-width: 1500px){
+   .pagination{
+      &__list{
+         padding: 0 80px;
+      }
+   }
 }
-
+@media (max-width: 768px){
+   .pagination{
+      &__next,
+      &__prev{
+         display: none;
+      }
+      &__list{
+         padding: 0;
+      }
+   }
+}
